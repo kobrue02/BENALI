@@ -143,11 +143,11 @@ from transformers import BertForSequenceClassification, Trainer
 If you use this work, please cite:
 ```bibtex
 @misc{benali2024,
-  title={BENALI: Multilingual Native Language Identification},
-  author={[Author Names]},
-  year={2024},
+  title={BENALI: BERT for NAtive Language Identification},
+  author={[Konrad Brüggemann]},
+  year={2025},
   howpublished={GitHub Repository},
-  url={[Repository URL]}
+  url={[https://github.com/kobrue02/BENALI]}
 }
 ```
 
