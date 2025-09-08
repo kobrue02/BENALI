@@ -76,7 +76,7 @@ BENALI/
 
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/kobrue02/BENALI.git
 cd BENALI
 
 # Install required packages
@@ -98,14 +98,11 @@ pip install beautifulsoup4 lxml
 ### 2. Traditional Baselines
 ```python
 # Run lexical_svm_baselines.ipynb for TF-IDF + SVM approach
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.svm import LinearSVC
 ```
 
 ### 3. Transformer Fine-tuning
 ```python
 # Run finetuning.ipynb for BERT fine-tuning
-from transformers import BertForSequenceClassification, Trainer
 ```
 
 ### 4. Advanced Models
