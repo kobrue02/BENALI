@@ -1,4 +1,4 @@
-# BENALI: Multilingual Native Language Identification
+# BENALI: BERT for NAtive Language Identification
 
 This repository contains the implementation of BENALI, a multilingual native language identification system that predicts a writer's first language (L1) based on their writing in a second language (L2).
 
