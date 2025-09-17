@@ -36,15 +36,9 @@ The project uses a comprehensive multilingual dataset combining several sources:
 - Batch size: 64, Learning rate: 5e-5, Epochs: 5
 - Performance: ~34% accuracy on test set
 
-### 3. Deep Neural Networks (`classifier.ipynb`)
-- **BERT + Linear Layers**: Deep multilingual classifier with BERT embeddings
-- **CNN Architecture**: 1D CNN over BERT representations
-- Multiple embedding models tested (BERT, XLM-RoBERTa, Sentence Transformers)
-
-### 4. Intermediate CNN (`interCNN.ipynb`)
-- **TransformerCNN**: Extracts intermediate transformer representations
-- 1D CNN over concatenated hidden states from multiple layers
-- Layer indices: [-7, -6, -5, -4] for capturing different linguistic levels
+### 3. LLM-based Approach (`llama_responses.ipynb`)
+- **LLM Native Language Identification**: Using large language models for NLI tasks
+- Prompt-based approach for native language prediction
 
 ## Repository Structure
 
@@ -52,15 +46,10 @@ The project uses a comprehensive multilingual dataset combining several sources:
 BENALI/
 ├── dataset_curation.ipynb          # Data collection and preprocessing
 ├── notebooks/
-│   ├── classifier.ipynb            # Deep learning models
-│   ├── classifier_traditional.ipynb
 │   ├── finetuning.ipynb           # Transformer fine-tuning
-│   ├── interCNN.ipynb             # Intermediate CNN approach
 │   ├── lexical_svm_baselines.ipynb # Traditional ML baselines
+│   ├── llama_responses.ipynb      # LLM-based native language identification
 │   └── preprocessing.ipynb         # Data preprocessing utilities
-├── nli_train_upsampled.csv        # Balanced training data
-├── nli_val.csv                    # Validation set
-├── nli_test.csv                   # Test set
 └── README.md
 ```
 
@@ -118,7 +107,6 @@ pip install beautifulsoup4 lxml
 | Majority Baseline | 8% | 15% | Always predicts Germany |
 | TF-IDF + SVM | 28% | 14% | Character n-grams |
 | BERT Fine-tuned | 34% | 18% | bert-base-multilingual-cased |
-| TransformerCNN | - | - | Intermediate representations |
 
 ## Challenges Addressed
 
