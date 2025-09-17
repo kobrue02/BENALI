@@ -4,7 +4,7 @@ This repository contains the implementation of BENALI, a multilingual native lan
 
 ## Overview
 
-BENALI tackles the challenging task of identifying the native language of writers based on linguistic patterns and interference phenomena that appear when writing in a second language. The project implements multiple approaches including traditional lexical features, transformer-based models, and hybrid CNN architectures.
+BENALI tackles the challenging task of identifying the native language of writers based on linguistic patterns and interference phenomena that appear when writing in a second language. The project implements multiple approaches including traditional lexical features, transformer-based models, and LLMs.
 
 ## Dataset
 
